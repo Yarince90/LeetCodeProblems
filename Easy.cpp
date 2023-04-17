@@ -32,7 +32,7 @@ namespace leetCode {
             }
             
             
-            mapList[n] = i;  // assume that each input would have exactly one solution
+            mapList[n] = i;
         }
         return {};
 	}
