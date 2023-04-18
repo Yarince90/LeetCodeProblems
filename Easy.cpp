@@ -22,13 +22,13 @@ namespace leetCode {
         for (int i = 0; i < nums.size(); i++) {
             
             int n = nums[i];            
-            int equalsTo = target - n;
+            int res = target - n;
            
-            if (mapList.count(equalsTo)) {
+            if (mapList.count(res)) {
 
-                cout << mapList[equalsTo] << " " << i << endl;
+                cout << mapList[res] << " " << i << endl;
 
-                return { mapList[equalsTo], i };
+                return { mapList[res], i };
             }
             
             
