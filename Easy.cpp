@@ -43,16 +43,14 @@ namespace leetCode {
 
         string temp = to_string(x);
         string rev = temp;
-        bool res = false;
 
         reverse(rev.begin(), rev.end());
 
         if (temp == rev) {
-            res = true;
             cout << "True!" << endl;
-            return res;
+            return true;
         }               
         cout << "False!" << endl;
-        return res;
+        return false;
     }
 }
