@@ -10,4 +10,7 @@ namespace leetCode {
 
 	//Problem 2
 	vector<int> twoSum(vector<int>& nums, int target);
+
+	//Problem 3
+	bool isPalindrome(int x);
 }

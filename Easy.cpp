@@ -1,6 +1,7 @@
 #define CRT_SECURE_NO_WARNINGS
 
 #include <iostream>
+#include <string>
 #include <vector>
 #include <unordered_map>
 #include "Easy.h"
@@ -21,19 +22,37 @@ namespace leetCode {
         
         for (int i = 0; i < nums.size(); i++) {
             
-            int n = nums[i];            
-            int res = target - n;
-           
+            int n = nums[i];                 
+            int res = target - n;           
+
             if (mapList.count(res)) {
 
                 cout << mapList[res] << " " << i << endl;
 
                 return { mapList[res], i };
             }
-            
-            
+                        
             mapList[n] = i;
+
         }
         return {};
 	}
+
+    //Problem 3
+    bool isPalindrome(int x) {
+
+        string temp = to_string(x);
+        string rev = temp;
+        bool res = false;
+
+        reverse(rev.begin(), rev.end());
+
+        if (temp == rev) {
+            res = true;
+            cout << "True!" << endl;
+            return res;
+        }               
+        cout << "False!" << endl;
+        return res;
+    }
 }
