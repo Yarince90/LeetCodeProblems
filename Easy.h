@@ -13,4 +13,7 @@ namespace leetCode {
 
 	//Problem 3
 	bool isPalindrome(int x);
+
+	//problem 4
+	int romanToInt(string s);
 }
